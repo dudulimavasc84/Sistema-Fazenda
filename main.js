@@ -1,1 +1,1 @@
-console.log('Sistema de Gado funcionando!');
+console.log('Sistema Taquarussu e Coqueiral funcionando com Supabase!');
