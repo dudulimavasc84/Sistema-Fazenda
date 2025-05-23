@@ -1,1 +1,30 @@
-<!DOCTYPE html><html><head><title>Fazenda Taquarussu</title></head><body><h1>Sistema de Gado</h1></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistema de Gado</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Fazenda Taquarussu / Fazenda Coqueiral</h1>
+        <nav>
+            <button onclick="showPage('painel')">Painel</button>
+            <button onclick="showPage('lancamentos')">Lançamentos</button>
+            <button onclick="showPage('estoque')">Estoque</button>
+            <button onclick="showPage('historico')">Histórico</button>
+            <button onclick="showPage('relatorios')">Relatórios</button>
+        </nav>
+    </header>
+    <main>
+        <div id="painel"><h2>Painel</h2><p>Resumo geral do rebanho.</p></div>
+        <div id="lancamentos" style="display:none;"><h2>Lançamentos</h2><p>Registrar nascimentos, vendas, abates...</p></div>
+        <div id="estoque" style="display:none;"><h2>Estoque</h2><p>Visualizar o rebanho por categoria e fazenda.</p></div>
+        <div id="historico" style="display:none;"><h2>Histórico</h2><p>Acompanhamento mês a mês.</p></div>
+        <div id="relatorios" style="display:none;"><h2>Relatórios</h2><p>Exportar e visualizar gráficos.</p></div>
+    </main>
+    <footer>
+        <p>Sistema em nuvem — pronto para integrar com banco Supabase</p>
+    </footer>
+</body>
+</html>
