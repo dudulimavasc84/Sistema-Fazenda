@@ -4,15 +4,15 @@
   <title>Login - Sistema de Gado</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="login-body">
-  <div class="login-box">
-    <img src="logo.png" alt="Logo Fazenda" class="logo">
+<body>
+  <div class="login-container">
     <h2>Login</h2>
     <input type="text" id="usuario" placeholder="Usuário">
     <input type="password" id="senha" placeholder="Senha">
     <button onclick="login()">Entrar</button>
-    <p id="mensagem" class="mensagem-erro"></p>
+    <p id="erro" class="erro"></p>
   </div>
+  <script src="supabase.js"></script>
   <script src="login.js"></script>
 </body>
 </html>
