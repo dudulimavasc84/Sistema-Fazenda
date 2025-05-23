@@ -1,3 +1,5 @@
-const SUPABASE_URL = "https://pndtmbbajirapzwkkxcv.supabase.co";
-const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBuZHRtYmJhamlyYXB6d2treGN2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTY3Nzg4MDAsImV4cCI6MjAzMjM1NDgwMH0.HbL0EbEd4hUtN_hAeKHptHGzX_Nw67F_xe1IQzW2UEM";
-const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+const { createClient } = supabase;
+const supabaseUrl = 'https://SEU_PROJETO.supabase.co';
+const supabaseKey = 'SEU_PUBLIC_ANON_KEY';
+const supabase = createClient(supabaseUrl, supabaseKey);

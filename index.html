@@ -1,18 +1,30 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Login - Sistema de Gado</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Login - Sistema de Gado</title>
+    <script src="supabase.js"></script>
 </head>
 <body>
-  <div class="login-container">
     <h2>Login</h2>
     <input type="text" id="usuario" placeholder="Usuário">
     <input type="password" id="senha" placeholder="Senha">
     <button onclick="login()">Entrar</button>
-    <p id="erro" class="erro"></p>
-  </div>
-  <script src="supabase.js"></script>
-  <script src="login.js"></script>
+    <p id="erro" style="color:red;"></p>
+
+    <script>
+        async function login() {
+            const usuario = document.getElementById('usuario').value;
+            const senha = document.getElementById('senha').value;
+            const { data, error } = await supabase.from('usuarios').select('*').eq('usuario', usuario).eq('senha', senha);
+
+            if (error || !data || data.length === 0) {
+                document.getElementById('erro').innerText = 'Usuário ou senha inválidos.';
+            } else {
+                window.location.href = 'painel.html';
+            }
+        }
+    </script>
 </body>
 </html>
