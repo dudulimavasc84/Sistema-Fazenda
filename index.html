@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Login - Sistema de Gado</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+  <title>Login - Sistema de Gado</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="login-container">
-        <img src="logo.png" alt="Logo Fazenda" class="logo">
-        <h1>Login</h1>
-        <input type="text" id="user" placeholder="Usuário">
-        <input type="password" id="pass" placeholder="Senha">
-        <button onclick="login()">Entrar</button>
-        <p id="login-status"></p>
-    </div>
+<body class="login-body">
+  <div class="login-box">
+    <img src="logo.png" alt="Logo Fazenda" class="logo">
+    <h2>Login</h2>
+    <input type="text" id="usuario" placeholder="Usuário">
+    <input type="password" id="senha" placeholder="Senha">
+    <button onclick="login()">Entrar</button>
+    <p id="mensagem" class="mensagem-erro"></p>
+  </div>
+  <script src="login.js"></script>
 </body>
 </html>

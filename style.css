@@ -1,42 +1,49 @@
-
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: #e0f2e0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
-.login-container {
-    background: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    text-align: center;
+
+.login-body {
+  background: #e5f2e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-.login-container h1 {
-    margin-bottom: 20px;
-    color: #2d572c;
+
+.login-box {
+  background: white;
+  padding: 2em;
+  border-radius: 10px;
+  text-align: center;
 }
-.login-container input {
-    display: block;
-    margin: 10px auto;
-    padding: 10px;
-    width: 80%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-.login-container button {
-    padding: 10px 20px;
-    background: #2d572c;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+
 .logo {
-    width: 100px;
-    margin-bottom: 20px;
+  width: 80px;
+  margin-bottom: 1em;
+}
+
+.navbar {
+  background-color: #2e7d32;
+  color: white;
+  padding: 1em;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.painel-body {
+  background: #f0fff0;
+}
+
+.painel-content {
+  padding: 2em;
 }
