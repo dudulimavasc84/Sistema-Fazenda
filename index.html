@@ -1,37 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
+    <meta charset="UTF-8">
     <title>Login - Sistema de Gado</title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
 <body>
-    <div id="login-container">
+    <div class="login-container">
+        <img src="logo.png" alt="Logo Fazenda" class="logo">
         <h1>Login</h1>
         <input type="text" id="user" placeholder="Usuário">
         <input type="password" id="pass" placeholder="Senha">
         <button onclick="login()">Entrar</button>
         <p id="login-status"></p>
-    </div>
-    <div id="app-container" style="display:none;">
-        <header>
-            <h1>Fazenda Taquarussu / Coqueiral</h1>
-            <nav>
-                <button onclick="showPage('painel')">Painel</button>
-                <button onclick="showPage('lancamentos')">Lançamentos</button>
-                <button onclick="showPage('estoque')">Estoque</button>
-                <button onclick="showPage('historico')">Histórico</button>
-                <button onclick="showPage('relatorios')">Relatórios</button>
-                <button onclick="logout()">Sair</button>
-            </nav>
-        </header>
-        <main>
-            <div id="painel"><h2>Painel</h2><p>Resumo do rebanho.</p></div>
-            <div id="lancamentos" style="display:none;"><h2>Lançamentos</h2><p>Registrar movimentações.</p></div>
-            <div id="estoque" style="display:none;"><h2>Estoque</h2><p>Visualização do rebanho por fazenda.</p></div>
-            <div id="historico" style="display:none;"><h2>Histórico</h2><p>Relatório mensal.</p></div>
-            <div id="relatorios" style="display:none;"><h2>Relatórios</h2><p>Exportar dados.</p></div>
-        </main>
     </div>
 </body>
 </html>
